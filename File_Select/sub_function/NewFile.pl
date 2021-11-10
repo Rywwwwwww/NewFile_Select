@@ -23,7 +23,6 @@ sub search{
 	}
 
 	#===================ソート処理===================
-	#my @sortedFiles = sort({$filesHash{$a} cmp $filesHash{$b}} @files);
 	my @sortedFiles = sort{$b->[0] cmp $a->[0]} @files;
 
 
